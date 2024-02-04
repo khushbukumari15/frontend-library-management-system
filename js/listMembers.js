@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("submitButton").addEventListener("click", async function (event) {
         event.preventDefault();
 
+        document.getElementById("content").innerHTML = ""
         try {
             const res = await fetch(
                 "http://localhost:5000/members",
